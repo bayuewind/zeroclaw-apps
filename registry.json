@@ -56,6 +56,25 @@
         "编程",
         "ChatGPT"
       ]
+    },
+    {
+      "id": "clash-verge",
+      "name": "Clash Verge Rev",
+      "repository": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "author": "clash-verge-rev",
+      "summary": {
+        "en": "Manage the Clash Verge Rev desktop application while preserving subscriptions and proxy configuration.",
+        "zh": "安装和管理 Clash Verge Rev 桌面应用，保留订阅和代理配置。"
+      },
+      "keywords": [
+        "clash",
+        "verge",
+        "mihomo",
+        "proxy",
+        "代理",
+        "订阅",
+        "桌面"
+      ]
     }
   ]
 }
