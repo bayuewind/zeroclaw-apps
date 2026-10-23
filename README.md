@@ -4,9 +4,9 @@ A curated application catalog for ZeroClaw.
 
 ## Status
 
-The catalog currently lists CC Switch CLI and Magpie CLI. Remote catalog loading
-is planned; the existing ZeroClaw application marketplace does not consume this
-repository yet. Publishing a listing does not make it installable in a client.
+The catalog lists CC Switch CLI, Magpie CLI and Codex desktop. Compatible
+ZeroClaw clients load this feed and retain a pinned offline snapshot. Publishing
+a listing does not make it installable in a client without its matching adapter.
 
 ## Catalog
 
@@ -50,8 +50,8 @@ refresh fails.
 
 ## 中文说明
 
-这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，首批包含 CC Switch CLI
-和 Magpie CLI。清单已经发布，但 Zero 的远程读取功能尚未接入。
+这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，包含 CC Switch CLI、
+Magpie CLI 和 Codex 桌面版。兼容的 Zero 客户端读取远程清单并保留固定版本的离线快照。
 
 后续通过 PR 提交精选应用变更。安装包、版本和校验信息继续来自官方发布源；
 安装、更新、卸载以及配置权限由 Zero 管理。新增应用仍需要客户端提供相应支持。

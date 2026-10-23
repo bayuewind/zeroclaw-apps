@@ -38,6 +38,24 @@
         "插件",
         "CLI"
       ]
+    },
+    {
+      "id": "codex-desktop",
+      "name": "Codex",
+      "repository": "https://github.com/openai/codex",
+      "author": "OpenAI",
+      "summary": {
+        "en": "Install and manage the Codex desktop app using accelerated mirrors, with checksum and publisher signature verification.",
+        "zh": "通过加速镜像安装和管理 Codex 桌面应用，校验安装包及发布者签名。"
+      },
+      "keywords": [
+        "codex",
+        "OpenAI",
+        "desktop",
+        "桌面",
+        "编程",
+        "ChatGPT"
+      ]
     }
   ]
 }
