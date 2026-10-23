@@ -1,0 +1,8 @@
+{
+  "source": "@org-vt43r0t0/cm-cloud-manage",
+  "version": "2.0.2",
+  "url": "https://api.skillhub.cn/api/v1/download?slug=cm-cloud-manage&namespace=org-vt43r0t0",
+  "sha256": "0968a992af914291b2116add9fd4d24fa2065d731478ebbadb3c08c2108dcaed",
+  "python_minimum": "3.10",
+  "note": "Fetch directly from the upstream source; no upstream code is redistributed in this repository. SKILL.md currently declares 2.0.0 while SkillHub reports release 2.0.2."
+}
