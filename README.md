@@ -4,7 +4,7 @@ A curated application catalog for ZeroClaw.
 
 ## Status
 
-The catalog lists CC Switch CLI, Magpie CLI and Codex desktop. Compatible
+The catalog lists CC Switch CLI, Magpie CLI, Codex desktop and Clash Verge Rev. Compatible
 ZeroClaw clients load this feed and retain a pinned offline snapshot. Publishing
 a listing does not make it installable in a client without its matching adapter.
 
@@ -51,7 +51,7 @@ refresh fails.
 ## 中文说明
 
 这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，包含 CC Switch CLI、
-Magpie CLI 和 Codex 桌面版。兼容的 Zero 客户端读取远程清单并保留固定版本的离线快照。
+Magpie CLI、Codex 桌面版和 Clash Verge Rev。兼容的 Zero 客户端读取远程清单并保留固定版本的离线快照。
 
 后续通过 PR 提交精选应用变更。安装包、版本和校验信息继续来自官方发布源；
 安装、更新、卸载以及配置权限由 Zero 管理。新增应用仍需要客户端提供相应支持。
