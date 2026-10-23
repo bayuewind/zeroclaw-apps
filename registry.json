@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "apps": [
+    {
+      "id": "cc-switch-cli",
+      "name": "CC Switch CLI",
+      "repository": "https://github.com/SaladDay/cc-switch-cli",
+      "author": "SaladDay",
+      "summary": {
+        "en": "Manage model service configurations for Claude Code, Codex and Gemini CLI.",
+        "zh": "在一个地方管理 Claude Code、Codex 和 Gemini CLI 的模型服务配置。"
+      },
+      "keywords": [
+        "cc-switch",
+        "ccswitch",
+        "codex",
+        "claude",
+        "gemini",
+        "CLI",
+        "配置"
+      ]
+    },
+    {
+      "id": "magpie-cli",
+      "name": "Magpie CLI",
+      "repository": "https://github.com/yetone/magpie",
+      "author": "yetone",
+      "summary": {
+        "en": "Bring model services and plugins together in a local gateway for Zero and other AI tools.",
+        "zh": "将模型服务与插件汇集到本地网关，为 Zero 和其他 AI 工具提供统一接入。"
+      },
+      "keywords": [
+        "magpie",
+        "喜鹊",
+        "gateway",
+        "模型",
+        "网关",
+        "插件",
+        "CLI"
+      ]
+    }
+  ]
+}
