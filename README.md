@@ -48,6 +48,21 @@ the client's installed view. Catalog revisions are Git commits; revert a change
 to publish a rollback. Clients should retain their last valid catalog when a
 refresh fails.
 
+## Application assistant content
+
+New listings must follow the [assistant content standard v1.0](docs/assistant-content-standard.md).
+It defines sourced application knowledge, intent-specific guidance, safe operation
+recipes, bounded troubleshooting and admission evidence.
+
+- [Submission template](templates/assistant.md)
+- [Review and evaluation checklist](templates/assistant-review.md)
+- [Magpie introduction example](examples/magpie-introduction.md) (illustrative, not an approved package)
+- [中文提交指南](docs/assistant-content-guide.zh-CN.md)
+
+Assistant content is documentation only until a compatible Zero client explicitly
+integrates it. This standard does not change the v1 feed, runtime prompts or user
+permissions. Existing listings remain available while their packages are prepared.
+
 ## 中文说明
 
 这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，首批包含 CC Switch CLI
@@ -55,3 +70,6 @@ refresh fails.
 
 后续通过 PR 提交精选应用变更。安装包、版本和校验信息继续来自官方发布源；
 安装、更新、卸载以及配置权限由 Zero 管理。新增应用仍需要客户端提供相应支持。
+
+新增应用还需遵守 [应用助手内容规范](docs/assistant-content-guide.zh-CN.md)，提交功能资料、
+分类回答指导、操作与排障边界及验收记录。本次规范不会自动修改当前 Zero 的 AI 行为。
