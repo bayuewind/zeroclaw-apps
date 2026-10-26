@@ -75,6 +75,43 @@
         "订阅",
         "桌面"
       ]
+    },
+    {
+      "id": "cm-cloud-manage",
+      "name": "中国移动云盘",
+      "repository": "https://github.com/bayuewind/zeroclaw-apps",
+      "author": "org-vt43r0t0",
+      "summary": {
+        "zh": "安装移动云盘管理 Skill，授权后通过智能体访问文件、分享和相簿，并可打开网页版。",
+        "en": "Install the China Mobile Cloud skill, authorize file, share and album access through an agent, and open the web app."
+      },
+      "keywords": [
+        "移动云盘",
+        "和彩云",
+        "139",
+        "cmcloud",
+        "cloud",
+        "skill",
+        "网盘"
+      ]
+    },
+    {
+      "id": "nutstore",
+      "name": "坚果云",
+      "repository": "https://github.com/bayuewind/zeroclaw-apps",
+      "author": "ZeroClaw Apps",
+      "summary": {
+        "zh": "通过官方 WebDAV 接入坚果云，列出和下载文件，在 ZeroClaw 专属目录上传文件与创建文件夹。",
+        "en": "Connect Nutstore through official WebDAV to list and download files, and upload files or create folders inside ZeroClaw."
+      },
+      "keywords": [
+        "坚果云",
+        "Nutstore",
+        "jianguoyun",
+        "WebDAV",
+        "cloud",
+        "网盘"
+      ]
     }
   ]
 }
