@@ -4,9 +4,9 @@ A curated application catalog for ZeroClaw.
 
 ## Status
 
-The catalog currently lists CC Switch CLI and Magpie CLI. Remote catalog loading
-is planned; the existing ZeroClaw application marketplace does not consume this
-repository yet. Publishing a listing does not make it installable in a client.
+The catalog lists CC Switch CLI, Magpie CLI, Codex desktop, Clash Verge Rev, China Mobile Cloud and Nutstore. Compatible
+ZeroClaw clients load this feed and retain a pinned offline snapshot. Publishing
+a listing does not make it installable in a client without its matching adapter.
 
 ## Catalog
 
@@ -65,11 +65,39 @@ permissions. Existing listings remain available while their packages are prepare
 
 ## 中文说明
 
-这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，首批包含 CC Switch CLI
-和 Magpie CLI。清单已经发布，但 Zero 的远程读取功能尚未接入。
+这里维护 ZeroClaw 精选应用的介绍、顺序和搜索关键词，包含 CC Switch CLI、
+Magpie CLI、Codex 桌面版、Clash Verge Rev、中国移动云盘和坚果云。兼容的 Zero 客户端读取远程清单并保留固定版本的离线快照。
 
 后续通过 PR 提交精选应用变更。安装包、版本和校验信息继续来自官方发布源；
 安装、更新、卸载以及配置权限由 Zero 管理。新增应用仍需要客户端提供相应支持。
 
 新增应用还需遵守 [应用助手内容规范](docs/assistant-content-guide.zh-CN.md)，提交功能资料、
 分类回答指导、操作与排障边界及验收记录。本次规范不会自动修改当前 Zero 的 AI 行为。
+
+## Cloud applications
+
+Cloud listings install local agent capability packages and link to their web
+applications. They do not wrap a browser session or install a desktop client.
+The client pins package sources and SHA-256 values independently of this catalog.
+Updates require a reviewed client pin; mutable upstream changes fail closed.
+
+- China Mobile Cloud: upstream SkillHub package
+  `@org-vt43r0t0/cm-cloud-manage`, release 2.0.2. See
+  [source pin](packages/cm-cloud-manage.json). The upstream package is downloaded
+  directly, never republished here. Its scripts require Python 3.10+; installation
+  does not install dependencies or authorize the user's account.
+- Nutstore: [maintained WebDAV skill](packages/nutstore/SKILL.md) using the
+  [official service](https://help.jianguoyun.com/?tag=webdav). Run
+  `python3 packages/build.py` to rebuild its deterministic archive. This is a
+  ZeroClaw integration, not an official Nutstore client. Configure a dedicated
+  application password locally; read access covers the account, writes are
+  create-only and limited to `/ZeroClaw`. Credentials are stored in a mode-0600
+  local file outside the installed skill, without encryption; protect the OS
+  account and revoke the dedicated password in Nutstore when no longer needed.
+
+Zero installs these skills beneath its existing shared skill directory. Users
+choose a skill bundle and agent through existing configuration; package install
+never enables script execution or grants an agent additional tool permissions.
+Uninstall preserves remote files and local credentials. Disconnect/revoke an
+account separately. Backups are retained for manual recovery. Skills and scripts
+remain subject to the client's existing audit and tool permission checks.
